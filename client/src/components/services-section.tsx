@@ -43,7 +43,7 @@ export default function ServicesSection() {
     <section id="services" className="py-20 bg-warm-gray">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl font-bold text-charcoal">Our Services</h2>
+          <h2 className="text-4xl font-bold text-charcoal">My Services</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Professional filmmaking services tailored for the agricultural industry
           </p>
