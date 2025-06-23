@@ -6,32 +6,35 @@ const services = [
   {
     icon: Video,
     title: "Promotional Videos",
-    description: "Compelling promotional content that showcases your farm, products, and story to attract customers and investment.",
+    description: "Compelling promotional content that showcases your machinery, farm and more to attract valuable customers",
     features: [
-      "Brand storytelling",
-      "Product showcases", 
-      "Farm tours"
-    ]
+      "Product showcases",
+      "Sponsored videos", 
+      "Online Advertising"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=Nly9rFrOoqk"
   },
   {
     icon: Home,
-    title: "Property Showcases",
-    description: "Professional property videos for real estate marketing, showcasing land, buildings, and agricultural potential.",
+    title: "Seasonal Videos",
+    description: "Footage from a year-round farming cycle, seamlessly edited to display all the different work that is carried out on your farm",
     features: [
-      "Real estate marketing",
-      "Land evaluation videos",
-      "Investment presentations"
-    ]
+      "Year-round on-farm filming",
+      "Variety of footage",
+      "Staff videos"
+    ],
+    videoUrl: "https://youtu.be/N5HwOD6uwzc?si=k2D0hA_53To2Ya8S"
   },
   {
     icon: TbDrone,
     title: "Aerial Photography",
-    description: "Stunning aerial footage and photography that captures the scale and beauty of agricultural operations.",
+    description: "Stunning aerial footage and photography that captures the scale and progression of agricultural operations.",
     features: [
       "Drone cinematography",
-      "Property mapping",
-      "Landscape photography"
-    ]
+      "Landscape photography",
+      "Overtime progression and development"
+    ],
+    videoUrl: "https://youtu.be/Yguqb5Iy3jw?si=YzVoJ6G6YFGRMSVO"
   }
 ];
 
@@ -48,7 +51,8 @@ export default function ServicesSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all">
+            <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                  onClick={() => window.open(service.videoUrl, '_blank')}>
               <CardContent className="p-8">
                 <div className="text-forest text-4xl mb-6">
                   <service.icon size={48} />

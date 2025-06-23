@@ -67,7 +67,7 @@ export default function ContactSection() {
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl font-bold text-charcoal">Get in Touch</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to tell your agricultural story? Contact us for a consultation and quote.
+            Ready to share your agricultural story? Get in touch for a consultation and quote.
           </p>
         </div>
         
@@ -127,6 +127,7 @@ export default function ContactSection() {
                     <Facebook size={20} />
                   </Button>
                   <Button
+                    onClick={() => window.open('https://www.instagram.com/canterburykiwiyt', '_blank')}
                     className="bg-blue-400 text-white hover:bg-blue-500"
                     size="icon"
                   >

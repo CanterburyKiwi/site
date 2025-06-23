@@ -7,27 +7,31 @@ export default function AboutSection() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-charcoal">About Canterbury Kiwi</h2>
+            <h2 className="text-4xl font-bold text-charcoal">My Work</h2>
             <div className="space-y-4 text-gray-600">
               <p className="text-lg">
-                Based in the heart of New Zealand's agricultural region, Canterbury Kiwi specializes in professional filmmaking services for the farming and rural industries.
+                Based in the heart of New Zealand's agricultural region, I, Canterbury Kiwi specialize in professional filmmaking services for farms and agricultural businesses.
               </p>
               <p>
-                With years of experience in agricultural storytelling, we understand the unique challenges and opportunities within the farming sector. Our team combines technical expertise with a deep appreciation for rural life.
+                With over 5 year's experience, 30+ paid projects, and over 1.5 million YouTube views, I understand the best way to get your product advertised on the market. I have both technical expertise as well as rural knowledge from working on farms. This combination allows us to achieve the best shots and editing outcomes to make your promotional material successful.
               </p>
               <p>
-                From promotional videos that showcase your farm's story to aerial footage that captures the scale of your operation, we're committed to delivering content that drives results for your business.
+                From promotional videos for machinery dealerships to aerial footage that captures the scale of your farming operation, I'm committed to delivering content that drives results for your business.
               </p>
             </div>
             
-            <div className="grid grid-cols-2 gap-6 pt-6">
+            <div className="grid grid-cols-3 gap-6 pt-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-forest">50+</div>
-                <div className="text-sm text-gray-600">Projects Completed</div>
+                <div className="text-3xl font-bold text-forest">30+</div>
+                <div className="text-sm text-gray-600">Paid Projects</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-forest">5+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-forest">1.5M+</div>
+                <div className="text-sm text-gray-600">YouTube Views</div>
               </div>
             </div>
           </div>
