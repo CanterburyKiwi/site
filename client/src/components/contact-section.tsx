@@ -120,6 +120,7 @@ export default function ContactSection() {
                     <Youtube size={20} />
                   </Button>
                   <Button
+                    onClick={() => window.open('https://www.facebook.com/CanterburyKiwiYT', '_blank')}
                     className="bg-blue-600 text-white hover:bg-blue-700"
                     size="icon"
                   >
