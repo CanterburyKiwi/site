@@ -41,10 +41,11 @@ export default function ContactSection() {
       const response = await apiRequest("POST", "/api/contact", data);
       return response.json();
     },
-    onSuccess: () => {
+    onSuccess: (response: any) => {
+      const emailStatus = response.emailSent ? "Your inquiry has been sent directly to my email." : "Your inquiry has been saved (email notification may be delayed).";
       toast({
         title: "Message sent successfully!",
-        description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+        description: `Thank you for your inquiry. ${emailStatus} I'll get back to you within 24 hours.`,
       });
       form.reset();
     },
@@ -182,7 +183,7 @@ export default function ContactSection() {
                 <FormField
                   control={form.control}
                   name="phone"
-                  render={({ field }) => (
+                  render={({ field: { value, onChange, onBlur, name, ref } }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-medium text-charcoal">Phone</FormLabel>
                       <FormControl>
@@ -190,7 +191,11 @@ export default function ContactSection() {
                           type="tel"
                           placeholder="+64 27 123 4567" 
                           className="focus:ring-2 focus:ring-forest focus:border-transparent"
-                          {...field} 
+                          value={value || ""}
+                          onChange={onChange}
+                          onBlur={onBlur}
+                          name={name}
+                          ref={ref}
                         />
                       </FormControl>
                       <FormMessage />
