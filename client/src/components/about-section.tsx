@@ -10,7 +10,7 @@ export default function AboutSection() {
             <h2 className="text-4xl font-bold text-charcoal">My Work</h2>
             <div className="space-y-4 text-gray-600">
               <p className="text-lg">
-                Based in the heart of New Zealand's agricultural region, I, Canterbury Kiwi specialize in professional filmmaking services for farms and agricultural businesses.
+                Based in the heart of New Zealand's agricultural region, Canterbury Kiwi specializes in professional filmmaking services for farms and agricultural businesses.
               </p>
               <p>
                 With over 5 year's experience, 30+ paid projects, and over 1.5 million YouTube views, I understand the best way to get your product advertised on the market. I have both technical expertise as well as rural knowledge from working on farms. This combination allows us to achieve the best shots and editing outcomes to make your promotional material successful.
