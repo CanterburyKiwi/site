@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/claas lexion_1750717595655.jpg";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,12 @@ export default function Navigation() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">CK</span>
+            <div className="w-12 h-12 rounded-full overflow-hidden">
+              <img 
+                src={logoImage} 
+                alt="Canterbury Kiwi" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-forest">Canterbury Kiwi</h1>
