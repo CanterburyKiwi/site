@@ -8,12 +8,13 @@ import plantingImage from "@assets/Fendt planting maize_1750671941414.jpg";
 import carrotHarvestImage from "@assets/carrot harvest_1750673841911.jpg";
 import grassSeedImage from "@assets/x9 grass seed_1750673841913.jpg";
 import nhCombinesImage from "@assets/NH combines_1750674060749.jpg";
+import johnDeereMaizeImage from "@assets/John Deere chopping maize_1750701840307.jpg";
 
 const portfolioItems = [
   {
     title: "John Deere 9600i Chopping Maize",
     description: "Watch the powerful John Deere 9600i in action as it efficiently chops maize for silage production.",
-    image: plantingImage,
+    image: johnDeereMaizeImage,
     videoUrl: "https://youtu.be/aqBUuc44DoE"
   },
   {
