@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Video, Home, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Video, Home, Check, Play } from "lucide-react";
 import { TbDrone } from "react-icons/tb";
 
 const services = [
@@ -51,9 +52,8 @@ export default function ServicesSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all cursor-pointer"
-                  onClick={() => window.open(service.videoUrl, '_blank')}>
-              <CardContent className="p-8">
+            <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8 flex flex-col h-full">
                 <div className="text-forest text-4xl mb-6">
                   <service.icon size={48} />
                 </div>
@@ -61,7 +61,7 @@ export default function ServicesSection() {
                 <p className="text-gray-600 mb-6">
                   {service.description}
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 flex-grow">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
                       <Check className="text-forest mr-2" size={16} />
@@ -69,6 +69,16 @@ export default function ServicesSection() {
                     </li>
                   ))}
                 </ul>
+                <div className="mt-6 pt-4 border-t border-gray-100">
+                  <Button 
+                    onClick={() => window.open(service.videoUrl, '_blank')}
+                    className="w-full bg-forest hover:bg-forest/90 text-white"
+                    variant="default"
+                  >
+                    <Play className="mr-2" size={16} />
+                    Preview Example
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
