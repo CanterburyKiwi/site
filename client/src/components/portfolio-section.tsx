@@ -5,6 +5,9 @@ import balingImage2 from "@assets/2x case tractors baling_1750671941414.jpg";
 import harvestImage from "@assets/3x lexions_1750671941414.jpg";
 import quadtracImage from "@assets/Case ih quadtrac_1750671941414.jpg";
 import plantingImage from "@assets/Fendt planting maize_1750671941414.jpg";
+import carrotHarvestImage from "@assets/carrot harvest_1750673841911.jpg";
+import grassSeedImage from "@assets/x9 grass seed_1750673841913.jpg";
+import nhCombinesImage from "@assets/NH combines_1750674060749.jpg";
 
 const portfolioItems = [
   {
@@ -23,19 +26,19 @@ const portfolioItems = [
     image: harvestImage
   },
   {
-    title: "High Power Cultivation",
-    description: "Quadtrac cultivation operations at golden hour",
-    image: quadtracImage
+    title: "Carrot Harvest Operations",
+    description: "Specialized root vegetable harvesting equipment in action",
+    image: carrotHarvestImage
   },
   {
-    title: "Precision Planting",
-    description: "Modern planting techniques and equipment showcase",
-    image: plantingImage
+    title: "Grass Seed Processing",
+    description: "Aerial view of grass seed harvesting and processing",
+    image: grassSeedImage
   },
   {
-    title: "Seasonal Farm Operations",
-    description: "Year-round agricultural activities documentation",
-    image: balingImage1
+    title: "New Holland Fleet",
+    description: "Multi-combine harvest operations across Canterbury fields",
+    image: nhCombinesImage
   }
 ];
 
