@@ -11,34 +11,40 @@ import nhCombinesImage from "@assets/NH combines_1750674060749.jpg";
 
 const portfolioItems = [
   {
-    title: "Canterbury Harvest Operations",
-    description: "Comprehensive harvest documentation and promotional content",
-    image: balingImage1
+    title: "John Deere 9600i Chopping Maize",
+    description: "Watch the powerful John Deere 9600i in action as it efficiently chops maize for silage production.",
+    image: plantingImage,
+    videoUrl: "https://youtu.be/aqBUuc44DoE"
   },
   {
-    title: "Modern Baling Techniques",
-    description: "Agricultural efficiency showcase with modern equipment",
-    image: balingImage2
+    title: "Case IH Tractors Baling Barley",
+    description: "Experience the precision of Case IH tractors as they work through the barley harvest with modern baling equipment.",
+    image: balingImage2,
+    videoUrl: "https://youtu.be/4awJ2wzTuMM"
   },
   {
-    title: "Large Scale Harvesting",
-    description: "Multi-combine harvest operations aerial footage",
-    image: harvestImage
+    title: "Claas Lexion Combines Harvesting Carrot Seed",
+    description: "Follow the specialized process of harvesting carrot seed with Claas Lexion combines in Canterbury fields.",
+    image: harvestImage,
+    videoUrl: "https://youtu.be/jl4OvJfOJUY"
   },
   {
-    title: "Carrot Harvest Operations",
-    description: "Specialized root vegetable harvesting equipment in action",
-    image: carrotHarvestImage
+    title: "Harvesting Carrots w/ Dewulf RA 3060",
+    description: "See the impressive Dewulf RA 3060 harvester in action as it efficiently processes the carrot harvest.",
+    image: carrotHarvestImage,
+    videoUrl: "https://youtu.be/Zbl-Gn9_bNU"
   },
   {
-    title: "Grass Seed Processing",
-    description: "Aerial view of grass seed harvesting and processing",
-    image: grassSeedImage
+    title: "John Deere X9 Harvesting Grass Seed",
+    description: "Experience the cutting-edge John Deere X9 combine as it harvests grass seed with precision and efficiency.",
+    image: grassSeedImage,
+    videoUrl: "https://youtu.be/AMmkeUvRtnk"
   },
   {
-    title: "New Holland Fleet",
-    description: "Multi-combine harvest operations across Canterbury fields",
-    image: nhCombinesImage
+    title: "New Holland Combines Harvesting Wheat",
+    description: "Watch New Holland combines work in perfect coordination as they harvest wheat across expansive Canterbury fields.",
+    image: nhCombinesImage,
+    videoUrl: "https://youtu.be/JojIj7LVyiI"
   }
 ];
 
@@ -55,7 +61,8 @@ export default function PortfolioSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all">
+            <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                 onClick={() => window.open(item.videoUrl, '_blank')}>
               <img 
                 src={item.image}
                 alt={item.title}
