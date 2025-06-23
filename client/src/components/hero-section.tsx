@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Video, Youtube, Camera, Plane } from "lucide-react";
+import { Video, Youtube, Camera } from "lucide-react";
+import { TbDrone } from "react-icons/tb";
 import harvestImage from "@assets/x9_1750671076474.jpg";
 
 export default function HeroSection() {
@@ -37,7 +38,7 @@ export default function HeroSection() {
                 onClick={scrollToContact}
                 className="bg-harvest text-charcoal px-8 py-4 hover:bg-harvest/90 font-semibold text-lg"
               >
-                Get Quote
+                Get In Touch
               </Button>
               <Button
                 onClick={() => window.open('https://www.youtube.com/@CanterburyKiwi', '_blank')}
@@ -63,7 +64,7 @@ export default function HeroSection() {
                   <span>Property Showcases</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Plane className="text-harvest" size={20} />
+                  <TbDrone className="text-harvest" size={20} />
                   <span>Aerial Photography</span>
                 </div>
               </div>

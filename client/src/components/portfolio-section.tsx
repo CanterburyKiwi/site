@@ -1,36 +1,41 @@
 import { Button } from "@/components/ui/button";
 import { Play, ArrowRight } from "lucide-react";
+import balingImage1 from "@assets/2x case tractors baling-1_1750671941413.jpg";
+import balingImage2 from "@assets/2x case tractors baling_1750671941414.jpg";
+import harvestImage from "@assets/3x lexions_1750671941414.jpg";
+import quadtracImage from "@assets/Case ih quadtrac_1750671941414.jpg";
+import plantingImage from "@assets/Fendt planting maize_1750671941414.jpg";
 
 const portfolioItems = [
   {
-    title: "Greenfield Dairy Farm",
-    description: "Promotional video showcasing sustainable farming practices",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "Canterbury Harvest Operations",
+    description: "Comprehensive harvest documentation and promotional content",
+    image: balingImage1
   },
   {
-    title: "Heritage Vineyard",
-    description: "Aerial showcase for premium wine estate marketing",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "Modern Baling Techniques",
+    description: "Agricultural efficiency showcase with modern equipment",
+    image: balingImage2
   },
   {
-    title: "High Country Station",
-    description: "Property showcase for rural real estate sale",
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "Large Scale Harvesting",
+    description: "Multi-combine harvest operations aerial footage",
+    image: harvestImage
   },
   {
-    title: "Canterbury Greens",
-    description: "Sustainable horticulture promotional campaign",
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "High Power Cultivation",
+    description: "Quadtrac cultivation operations at golden hour",
+    image: quadtracImage
   },
   {
-    title: "Blossom Orchards",
-    description: "Seasonal documentation and marketing content",
-    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "Precision Planting",
+    description: "Modern planting techniques and equipment showcase",
+    image: plantingImage
   },
   {
-    title: "AgriTech Solutions",
-    description: "Technology integration documentary",
-    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "Seasonal Farm Operations",
+    description: "Year-round agricultural activities documentation",
+    image: balingImage1
   }
 ];
 

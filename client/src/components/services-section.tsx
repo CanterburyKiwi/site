@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Video, Home, Plane, Check } from "lucide-react";
+import { Video, Home, Check } from "lucide-react";
+import { TbDrone } from "react-icons/tb";
 
 const services = [
   {
@@ -23,7 +24,7 @@ const services = [
     ]
   },
   {
-    icon: Plane,
+    icon: TbDrone,
     title: "Aerial Photography",
     description: "Stunning aerial footage and photography that captures the scale and beauty of agricultural operations.",
     features: [

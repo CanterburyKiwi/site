@@ -102,7 +102,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-charcoal mb-1">Email</h3>
-                  <p className="text-gray-600">info@canterburykiwi.co.nz</p>
+                  <p className="text-gray-600">canterburykiwi@gmail.com</p>
                   <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                 </div>
               </div>
