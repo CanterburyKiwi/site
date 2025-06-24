@@ -37,7 +37,7 @@ const portfolioItems = [
   },
   {
     title: "John Deere X9 Harvesting Grass Seed",
-    description: "Experience the cutting-edge John Deere X9 combine as it harvests grass seed with precision and efficiency.",
+    description: "Experience the John Deere X9 combine as it harvests grass seed with efficiency.",
     image: grassSeedImage,
     videoUrl: "https://youtu.be/AMmkeUvRtnk"
   },
