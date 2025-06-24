@@ -21,8 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 max-w-md">
-              Professional filmmaking services for New Zealand's agricultural industry. 
-              Telling your story through the lens of rural excellence.
+              Professional filmmaking services for New Zealand's agricultural industry.
             </p>
           </div>
           
