@@ -7,7 +7,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-charcoal">My Work</h2>
+            <h2 className="text-4xl font-bold text-charcoal">Previous Projects</h2>
             <div className="space-y-4 text-gray-600">
               <p className="text-lg">
                 Based in the heart of New Zealand's agricultural region, Canterbury Kiwi specializes in professional filmmaking services for farms and agricultural businesses.
