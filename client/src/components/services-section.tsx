@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Video, Check, Play } from "lucide-react";
 import { TbDrone } from "react-icons/tb";
-import { FaTruckPickup } from "react-icons/fa";
+import tractorIcon from "@assets/ChatGPT Image Jun 24, 2025, 03_29_46 PM_1750735810953.png";
 
 const services = [
   {
@@ -17,7 +17,7 @@ const services = [
     videoUrl: "https://www.youtube.com/watch?v=Nly9rFrOoqk"
   },
   {
-    icon: FaTruckPickup,
+    icon: "tractor",
     title: "Seasonal Videos",
     description: "Footage from a year-round farming cycle, seamlessly edited to display all the different work that is carried out on your farm",
     features: [
@@ -56,7 +56,16 @@ export default function ServicesSection() {
             <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8 flex flex-col h-full">
                 <div className="text-forest text-4xl mb-6">
-                  <service.icon size={48} />
+                  {service.icon === "tractor" ? (
+                    <img 
+                      src={tractorIcon} 
+                      alt="Tractor" 
+                      className="w-12 h-12 filter brightness-0 saturate-100"
+                      style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)' }}
+                    />
+                  ) : (
+                    <service.icon size={48} />
+                  )}
                 </div>
                 <h3 className="text-2xl font-bold text-charcoal mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">
