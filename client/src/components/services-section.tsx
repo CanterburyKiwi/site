@@ -60,8 +60,8 @@ export default function ServicesSection() {
                     <img 
                       src={tractorIcon} 
                       alt="Tractor" 
-                      className="w-12 h-12 filter brightness-0 saturate-100"
-                      style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)' }}
+                      className="w-12 h-12"
+                      style={{ filter: 'brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(3000%) hue-rotate(120deg) brightness(95%) contrast(85%)' }}
                     />
                   ) : (
                     <service.icon size={48} />
