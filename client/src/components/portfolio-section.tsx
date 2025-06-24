@@ -12,10 +12,10 @@ import johnDeereMaizeImage from "@assets/John Deere chopping maize_1750701840307
 
 const portfolioItems = [
   {
-    title: "John Deere 9600i Chopping Maize",
-    description: "Watch the John Deere 9600i in action as it chops maize for silage production.",
-    image: johnDeereMaizeImage,
-    videoUrl: "https://youtu.be/aqBUuc44DoE"
+    title: "New Holland Combines Harvesting Wheat",
+    description: "Watch New Holland combines work in perfect coordination as they harvest wheat across expansive Canterbury fields.",
+    image: nhCombinesImage,
+    videoUrl: "https://youtu.be/JojIj7LVyiI"
   },
   {
     title: "Case IH Tractors Baling Barley",
@@ -42,10 +42,10 @@ const portfolioItems = [
     videoUrl: "https://youtu.be/AMmkeUvRtnk"
   },
   {
-    title: "New Holland Combines Harvesting Wheat",
-    description: "Watch New Holland combines work in perfect coordination as they harvest wheat across expansive Canterbury fields.",
-    image: nhCombinesImage,
-    videoUrl: "https://youtu.be/JojIj7LVyiI"
+    title: "John Deere 9600i Chopping Maize",
+    description: "Watch the John Deere 9600i in action as it chops maize for silage production.",
+    image: johnDeereMaizeImage,
+    videoUrl: "https://youtu.be/aqBUuc44DoE"
   }
 ];
 
