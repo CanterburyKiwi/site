@@ -111,7 +111,7 @@ export default function ContactSection() {
             
             <Card className="bg-warm-gray">
               <CardContent className="p-6">
-                <h3 className="font-bold text-charcoal mb-4">Follow Our Work</h3>
+                <h3 className="font-bold text-charcoal mb-4">Follow My Work</h3>
                 <div className="flex space-x-4">
                   <Button
                     onClick={() => window.open('https://www.youtube.com/@CanterburyKiwi', '_blank')}
