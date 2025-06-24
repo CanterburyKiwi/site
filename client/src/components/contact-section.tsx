@@ -52,27 +52,27 @@ export default function ContactSection() {
           <Card className="bg-warm-gray mx-auto max-w-md">
             <CardContent className="p-6 text-center">
               <h3 className="font-bold text-charcoal mb-4">Follow My Work</h3>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center space-x-6">
                 <Button
                   onClick={() => window.open('https://www.youtube.com/@CanterburyKiwi', '_blank')}
-                  className="bg-red-600 text-white hover:bg-red-700"
+                  className="bg-red-600 text-white hover:bg-red-700 w-14 h-14"
                   size="icon"
                 >
-                  <Youtube size={20} />
+                  <Youtube size={32} />
                 </Button>
                 <Button
                   onClick={() => window.open('https://www.facebook.com/profile.php?id=61570505278895', '_blank')}
-                  className="bg-blue-600 text-white hover:bg-blue-700"
+                  className="bg-blue-600 text-white hover:bg-blue-700 w-14 h-14"
                   size="icon"
                 >
-                  <Facebook size={20} />
+                  <Facebook size={32} />
                 </Button>
                 <Button
                   onClick={() => window.open('https://www.instagram.com/canterbury_kiwi/', '_blank')}
-                  className="bg-pink-600 text-white hover:bg-pink-700"
+                  className="bg-pink-600 text-white hover:bg-pink-700 w-14 h-14"
                   size="icon"
                 >
-                  <Instagram size={20} />
+                  <Instagram size={32} />
                 </Button>
               </div>
             </CardContent>
