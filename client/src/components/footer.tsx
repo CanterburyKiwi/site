@@ -1,3 +1,5 @@
+import logoImage from "@assets/channels4_profile_1750717979071.jpg";
+
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -12,8 +14,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">CK</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden">
+                <img 
+                  src={logoImage} 
+                  alt="Canterbury Kiwi" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Canterbury Kiwi</h3>
