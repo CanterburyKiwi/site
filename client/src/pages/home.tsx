@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
-import YoutubeSection from "@/components/youtube-section";
 import ServicesSection from "@/components/services-section";
 import PortfolioSection from "@/components/portfolio-section";
 import AboutSection from "@/components/about-section";
@@ -13,7 +12,6 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <YoutubeSection />
         <ServicesSection />
         <PortfolioSection />
         <AboutSection />

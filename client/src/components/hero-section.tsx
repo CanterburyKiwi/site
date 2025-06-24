@@ -46,7 +46,7 @@ export default function HeroSection() {
                 className="bg-white/20 backdrop-blur-sm text-white border-white/30 px-8 py-4 hover:bg-white/30 font-semibold text-lg"
               >
                 <Youtube className="mr-2 h-5 w-5 text-red-500" />
-                Watch Our Work
+                Check Out My Work
               </Button>
             </div>
           </div>
