@@ -13,7 +13,7 @@ import johnDeereMaizeImage from "@assets/John Deere chopping maize_1750701840307
 const portfolioItems = [
   {
     title: "John Deere 9600i Chopping Maize",
-    description: "Watch the powerful John Deere 9600i in action as it efficiently chops maize for silage production.",
+    description: "Watch the John Deere 9600i in action as it chops maize for silage production.",
     image: johnDeereMaizeImage,
     videoUrl: "https://youtu.be/aqBUuc44DoE"
   },
