@@ -13,7 +13,7 @@ export default function AboutSection() {
                 Based in the heart of New Zealand's agricultural region, Canterbury Kiwi specializes in professional filmmaking services for farms and agricultural businesses.
               </p>
               <p>
-                With over 5 year's experience, 30+ paid projects, and over 1.5 million YouTube views, I understand the best way to get your product advertised on the market. I have both technical expertise as well as rural knowledge from working on farms. This combination allows us to achieve the best shots and editing outcomes to make your promotional material successful.
+                With 30+ paid projects, over 5 year's experience, and over 1.5 million YouTube views, I understand the best way to get your product advertised on the market. I have both technical expertise as well as rural knowledge from working on farms. This combination allows us to achieve the best shots and editing outcomes to make your promotional material successful.
               </p>
               <p>
                 From promotional videos for machinery dealerships to aerial footage that captures the scale of your farming operation, I'm committed to delivering content that drives results for your business.
@@ -22,12 +22,12 @@ export default function AboutSection() {
             
             <div className="grid grid-cols-3 gap-6 pt-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-forest">30+</div>
-                <div className="text-sm text-gray-600">Paid Projects</div>
-              </div>
-              <div className="text-center">
                 <div className="text-3xl font-bold text-forest">5+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-forest">30+</div>
+                <div className="text-sm text-gray-600">Paid Projects</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-forest">1.5M+</div>
