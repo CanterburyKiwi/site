@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Video, Home, Check, Play } from "lucide-react";
+import { Video, Check, Play, Cog } from "lucide-react";
 import { TbDrone } from "react-icons/tb";
 
 const services = [
@@ -16,7 +16,7 @@ const services = [
     videoUrl: "https://www.youtube.com/watch?v=Nly9rFrOoqk"
   },
   {
-    icon: Home,
+    icon: Cog,
     title: "Seasonal Videos",
     description: "Footage from a year-round farming cycle, seamlessly edited to display all the different work that is carried out on your farm",
     features: [
