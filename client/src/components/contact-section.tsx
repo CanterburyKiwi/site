@@ -33,7 +33,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="font-bold text-charcoal mb-1">Phone</h3>
                 <p className="text-gray-600">+64 27 262 0660</p>
-                <p className="text-sm text-gray-500">Mon-Fri 8AM-6PM</p>
+
               </div>
             </div>
             
