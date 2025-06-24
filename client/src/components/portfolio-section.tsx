@@ -19,7 +19,7 @@ const portfolioItems = [
   },
   {
     title: "Case IH Tractors Baling Barley",
-    description: "Experience the precision of Case IH tractors as they work through the barley harvest with modern baling equipment.",
+    description: "Experience Case IH tractors as they bale barley straw after the harvest",
     image: balingImage2,
     videoUrl: "https://youtu.be/4awJ2wzTuMM"
   },
