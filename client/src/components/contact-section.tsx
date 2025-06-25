@@ -85,8 +85,8 @@ export default function ContactSection() {
             </div>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
-              width="100%" 
-              height="1000" 
+              width="640" 
+              height="1111" 
               frameBorder="0" 
               marginHeight="0" 
               marginWidth="0"
