@@ -51,7 +51,7 @@ export default function ContactSection() {
           
           {/* Project Form Section */}
           <div className="mt-20 max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden mx-auto" style={{width: '640px'}}>
               <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
                 width={640} 
@@ -59,6 +59,7 @@ export default function ContactSection() {
                 frameBorder="0" 
                 marginHeight={0} 
                 marginWidth={0}
+                className="block"
               >
                 Loading…
               </iframe>
