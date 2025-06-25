@@ -56,7 +56,7 @@ export default function HeroSection() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <img 
-                    src="https://res.cloudinary.com/daouvggvv/image/upload/v1750846479/ChatGPT_Image_Jun_25_2025_at_10_11_13_PM_oejmri.png" 
+                    src="https://res.cloudinary.com/daouvggvv/image/upload/v1750878471/Untitled_design-removebg-preview_lmvabu.png" 
                     alt="Camera" 
                     className="w-5 h-5"
                     style={{ filter: 'brightness(0) saturate(100%) invert(58%) sepia(79%) saturate(2476%) hue-rotate(21deg) brightness(103%) contrast(101%)' }}
