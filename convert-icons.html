@@ -103,16 +103,18 @@
         
         <div class="icon-item">
             <h3>Camera Icon</h3>
-            <canvas id="cameraCanvas" width="96" height="96"></canvas>
+            <div class="preview">
+                <img id="cameraImage" src="https://res.cloudinary.com/daouvggvv/image/upload/v1750844323/camera_qqgxxf.png" alt="Camera Icon" style="width: 96px; height: 96px;">
+            </div>
             <div class="size-options">
                 <p>Select size:</p>
-                <button class="size-btn" onclick="renderCamera(48)">48px</button>
-                <button class="size-btn" onclick="renderCamera(96)">96px</button>
-                <button class="size-btn" onclick="renderCamera(128)">128px</button>
-                <button class="size-btn" onclick="renderCamera(256)">256px</button>
-                <button class="size-btn" onclick="renderCamera(512)">512px</button>
+                <button class="size-btn" onclick="setCameraSize(48)">48px</button>
+                <button class="size-btn" onclick="setCameraSize(96)">96px</button>
+                <button class="size-btn" onclick="setCameraSize(128)">128px</button>
+                <button class="size-btn" onclick="setCameraSize(256)">256px</button>
+                <button class="size-btn" onclick="setCameraSize(512)">512px</button>
             </div>
-            <button class="download-btn" onclick="downloadCamera()">Download PNG</button>
+            <button class="download-btn" onclick="downloadCameraFromCloudinary()">Download PNG</button>
         </div>
     </div>
     
@@ -329,7 +331,7 @@
 
         // Initial render
         renderDrone(96);
-        renderCamera(96);
+        setCameraSize(96);
     </script>
 </body>
 </html>
