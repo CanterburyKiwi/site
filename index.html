@@ -53,6 +53,22 @@
             scroll-behavior: smooth;
         }
         
+        .form-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 150%;
+            overflow: hidden;
+        }
+
+        .form-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
     </style>
 </head>
@@ -492,15 +508,13 @@
             
             <!-- Project Form Section -->
             <div class="mt-20 max-w-4xl mx-auto">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden mx-auto" style="width: 640px;">
+                <div class="form-wrapper bg-white rounded-2xl shadow-lg overflow-hidden mx-auto" style="max-width: 640px;">
                     <iframe 
                         src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
-                        width="640" 
-                        height="1111" 
                         frameborder="0" 
                         marginheight="0" 
                         marginwidth="0"
-                        class="block">
+                        allowfullscreen>
                         Loading…
                     </iframe>
                 </div>
