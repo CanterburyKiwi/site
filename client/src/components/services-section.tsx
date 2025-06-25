@@ -5,7 +5,7 @@ import { TbDrone } from "react-icons/tb";
 
 const services = [
   {
-    icon: Video,
+    icon: "camera",
     title: "Promotional Videos",
     description: "Compelling promotional content that showcases your machinery, farm and more to attract valuable customers",
     features: [
@@ -59,6 +59,13 @@ export default function ServicesSection() {
                     <img 
                       src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828393/ChatGPT_Image_Jun_24_2025_03_29_46_PM_1750735810953_upt28v.png" 
                       alt="Tractor" 
+                      className="w-12 h-12"
+                      style={{ filter: 'brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(1500%) hue-rotate(135deg) brightness(80%) contrast(90%)' }}
+                    />
+                  ) : service.icon === "camera" ? (
+                    <img 
+                      src="https://res.cloudinary.com/daouvggvv/image/upload/v1750846479/ChatGPT_Image_Jun_25_2025_at_10_11_13_PM_oejmri.png" 
+                      alt="Camera" 
                       className="w-12 h-12"
                       style={{ filter: 'brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(1500%) hue-rotate(135deg) brightness(80%) contrast(90%)' }}
                     />
