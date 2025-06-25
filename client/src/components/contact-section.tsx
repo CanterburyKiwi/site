@@ -14,7 +14,7 @@ export default function ContactSection() {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex items-start space-x-4">
               <div className="bg-forest text-white p-3 rounded-lg">
                 <MapPin size={20} />
@@ -99,6 +99,38 @@ export default function ContactSection() {
                 Loading…
               </iframe>
             </div>
+          </div>
+          
+          {/* Social Media Section */}
+          <div className="mt-12 max-w-md mx-auto">
+            <Card className="bg-warm-gray">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-bold text-charcoal mb-4">Follow My Work</h3>
+                <div className="flex justify-center space-x-6">
+                  <Button
+                    onClick={() => window.open('https://www.youtube.com/@CanterburyKiwi', '_blank')}
+                    className="bg-red-600 text-white hover:bg-red-700 w-14 h-14"
+                    size="icon"
+                  >
+                    <Youtube size={32} />
+                  </Button>
+                  <Button
+                    onClick={() => window.open('https://www.facebook.com/profile.php?id=61570505278895', '_blank')}
+                    className="bg-blue-600 text-white hover:bg-blue-700 w-14 h-14"
+                    size="icon"
+                  >
+                    <Facebook size={32} />
+                  </Button>
+                  <Button
+                    onClick={() => window.open('https://www.instagram.com/canterbury_kiwi/', '_blank')}
+                    className="bg-pink-600 text-white hover:bg-pink-700 w-14 h-14"
+                    size="icon"
+                  >
+                    <Instagram size={32} />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
