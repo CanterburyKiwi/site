@@ -59,7 +59,7 @@ export default function HeroSection() {
                     src="https://res.cloudinary.com/daouvggvv/image/upload/v1750846479/ChatGPT_Image_Jun_25_2025_at_10_11_13_PM_oejmri.png" 
                     alt="Camera" 
                     className="w-5 h-5"
-                    style={{ filter: 'brightness(0) saturate(100%) invert(58%) sepia(79%) saturate(2476%) hue-rotate(21deg) brightness(103%) contrast(101%)' }}
+                    style={{ filter: 'brightness(0) saturate(100%) invert(58%) sepia(79%) saturate(2476%) hue-rotate(21deg) brightness(103%) contrast(150%) drop-shadow(0 0 1px currentColor)' }}
                   />
                   <span>Promotional Videos</span>
                 </div>
