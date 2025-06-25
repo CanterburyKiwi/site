@@ -57,11 +57,6 @@
             color: #666;
             margin-bottom: 40px;
         }
-        canvas {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 10px;
-        }
         .size-options {
             margin: 20px 0;
         }
@@ -89,16 +84,18 @@
     <div class="icon-container">
         <div class="icon-item">
             <h3>Drone Icon</h3>
-            <canvas id="droneCanvas" width="96" height="96"></canvas>
+            <div class="preview">
+                <img id="droneImage" src="https://res.cloudinary.com/daouvggvv/image/upload/v1750844323/drone_kmbvp0.png" alt="Drone Icon" style="width: 96px; height: 96px;">
+            </div>
             <div class="size-options">
                 <p>Select size:</p>
-                <button class="size-btn" onclick="renderDrone(48)">48px</button>
-                <button class="size-btn" onclick="renderDrone(96)">96px</button>
-                <button class="size-btn" onclick="renderDrone(128)">128px</button>
-                <button class="size-btn" onclick="renderDrone(256)">256px</button>
-                <button class="size-btn" onclick="renderDrone(512)">512px</button>
+                <button class="size-btn" onclick="setDroneSize(48)">48px</button>
+                <button class="size-btn" onclick="setDroneSize(96)">96px</button>
+                <button class="size-btn" onclick="setDroneSize(128)">128px</button>
+                <button class="size-btn" onclick="setDroneSize(256)">256px</button>
+                <button class="size-btn" onclick="setDroneSize(512)">512px</button>
             </div>
-            <button class="download-btn" onclick="downloadDrone()">Download PNG</button>
+            <button class="download-btn" onclick="downloadDroneFromCloudinary()">Download PNG</button>
         </div>
         
         <div class="icon-item">
@@ -133,204 +130,38 @@
         let currentDroneSize = 96;
         let currentCameraSize = 96;
 
-        function renderDrone(size) {
+        function setDroneSize(size) {
             currentDroneSize = size;
-            const canvas = document.getElementById('droneCanvas');
-            canvas.width = size;
-            canvas.height = size;
-            const ctx = canvas.getContext('2d');
-            
-            // Clear canvas
-            ctx.clearRect(0, 0, size, size);
-            
-            const scale = size / 48;
-            ctx.scale(scale, scale);
-            
-            // Colors
-            const forest = '#1b4d3e';
-            const charcoal = '#2d3436';
-            
-            // Drone body
-            ctx.fillStyle = forest;
-            ctx.fillRect(18, 20, 12, 8);
-            
-            // Camera gimbal
-            ctx.fillStyle = charcoal;
-            ctx.beginPath();
-            ctx.arc(24, 24, 3, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            ctx.fillStyle = forest;
-            ctx.beginPath();
-            ctx.arc(24, 24, 2, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            // Propeller arms
-            ctx.fillStyle = forest;
-            ctx.fillRect(8, 22, 8, 2);
-            ctx.fillRect(32, 22, 8, 2);
-            ctx.fillRect(8, 24, 8, 2);
-            ctx.fillRect(32, 24, 8, 2);
-            
-            // Propellers
-            ctx.strokeStyle = forest;
-            ctx.lineWidth = 1.5;
-            ctx.beginPath();
-            ctx.arc(12, 18, 4, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.arc(36, 18, 4, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.arc(12, 30, 4, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.arc(36, 30, 4, 0, 2 * Math.PI);
-            ctx.stroke();
-            
-            // Propeller blades
-            ctx.beginPath();
-            ctx.moveTo(12, 14);
-            ctx.lineTo(12, 22);
-            ctx.moveTo(8, 18);
-            ctx.lineTo(16, 18);
-            ctx.stroke();
-            
-            ctx.beginPath();
-            ctx.moveTo(36, 14);
-            ctx.lineTo(36, 22);
-            ctx.moveTo(32, 18);
-            ctx.lineTo(40, 18);
-            ctx.stroke();
-            
-            ctx.beginPath();
-            ctx.moveTo(12, 26);
-            ctx.lineTo(12, 34);
-            ctx.moveTo(8, 30);
-            ctx.lineTo(16, 30);
-            ctx.stroke();
-            
-            ctx.beginPath();
-            ctx.moveTo(36, 26);
-            ctx.lineTo(36, 34);
-            ctx.moveTo(32, 30);
-            ctx.lineTo(40, 30);
-            ctx.stroke();
-            
-            // Landing gear
-            ctx.fillStyle = charcoal;
-            ctx.fillRect(20, 28, 2, 4);
-            ctx.fillRect(26, 28, 2, 4);
-            ctx.fillRect(18, 30, 6, 1);
-            ctx.fillRect(24, 30, 6, 1);
-            
-            ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform
+            const img = document.getElementById('droneImage');
+            img.style.width = size + 'px';
+            img.style.height = size + 'px';
         }
 
-        function renderCamera(size) {
-            currentCameraSize = size;
-            const canvas = document.getElementById('cameraCanvas');
-            canvas.width = size;
-            canvas.height = size;
-            const ctx = canvas.getContext('2d');
-            
-            // Clear canvas
-            ctx.clearRect(0, 0, size, size);
-            
-            const scale = size / 48;
-            ctx.scale(scale, scale);
-            
-            // Colors
-            const forest = '#1b4d3e';
-            const charcoal = '#2d3436';
-            const harvest = '#f4a261';
-            
-            // Camera body
-            ctx.fillStyle = forest;
-            ctx.fillRect(8, 16, 32, 20);
-            
-            // Camera top
-            ctx.fillRect(14, 12, 20, 4);
-            
-            // Lens outer ring
-            ctx.fillStyle = charcoal;
-            ctx.beginPath();
-            ctx.arc(24, 26, 8, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            // Lens middle ring
-            ctx.fillStyle = forest;
-            ctx.beginPath();
-            ctx.arc(24, 26, 6, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            // Lens inner ring
-            ctx.fillStyle = charcoal;
-            ctx.beginPath();
-            ctx.arc(24, 26, 4, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            // Lens center
-            ctx.fillStyle = harvest;
-            ctx.beginPath();
-            ctx.arc(24, 26, 2, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            // Viewfinder
-            ctx.fillStyle = charcoal;
-            ctx.fillRect(32, 14, 4, 2);
-            
-            // Flash
-            ctx.fillStyle = harvest;
-            ctx.fillRect(12, 14, 3, 2);
-            
-            // Camera grip texture
-            ctx.fillStyle = charcoal;
-            ctx.fillRect(9, 18, 1, 2);
-            ctx.fillRect(9, 21, 1, 2);
-            ctx.fillRect(9, 24, 1, 2);
-            ctx.fillRect(9, 27, 1, 2);
-            ctx.fillRect(9, 30, 1, 2);
-            
-            // Camera strap
-            ctx.beginPath();
-            ctx.arc(38, 18, 1.5, 0, 2 * Math.PI);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(10, 18, 1.5, 0, 2 * Math.PI);
-            ctx.fill();
-            
-            // Focus ring details
-            ctx.strokeStyle = charcoal;
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.arc(24, 26, 5, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.arc(24, 26, 3, 0, 2 * Math.PI);
-            ctx.stroke();
-            
-            ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform
-        }
-
-        function downloadDrone() {
-            const canvas = document.getElementById('droneCanvas');
+        function downloadDroneFromCloudinary() {
+            const cloudinaryUrl = `https://res.cloudinary.com/daouvggvv/image/upload/w_${currentDroneSize},h_${currentDroneSize}/v1750844323/drone_kmbvp0.png`;
             const link = document.createElement('a');
             link.download = `canterbury-kiwi-drone-${currentDroneSize}px.png`;
-            link.href = canvas.toDataURL();
+            link.href = cloudinaryUrl;
             link.click();
         }
 
-        function downloadCamera() {
-            const canvas = document.getElementById('cameraCanvas');
+        function setCameraSize(size) {
+            currentCameraSize = size;
+            const img = document.getElementById('cameraImage');
+            img.style.width = size + 'px';
+            img.style.height = size + 'px';
+        }
+
+        function downloadCameraFromCloudinary() {
+            const cloudinaryUrl = `https://res.cloudinary.com/daouvggvv/image/upload/w_${currentCameraSize},h_${currentCameraSize}/v1750844323/camera_qqgxxf.png`;
             const link = document.createElement('a');
             link.download = `canterbury-kiwi-camera-${currentCameraSize}px.png`;
-            link.href = canvas.toDataURL();
+            link.href = cloudinaryUrl;
             link.click();
         }
 
         // Initial render
-        renderDrone(96);
+        setDroneSize(96);
         setCameraSize(96);
     </script>
 </body>
