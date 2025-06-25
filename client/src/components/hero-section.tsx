@@ -60,7 +60,7 @@ export default function HeroSection() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Camera className="text-harvest" size={20} />
-                  <span>Property Showcases</span>
+                  <span>Seasonal Videos</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <TbDrone className="text-harvest" size={20} />
