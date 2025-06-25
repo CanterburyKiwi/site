@@ -105,6 +105,8 @@ Canterbury Kiwi is a professional agricultural filmmaking service website that s
 
 ```
 Changelog:
+- June 25, 2025: Optimized Google Form height to reduce excess blank space (120% padding-bottom)
+- June 25, 2025: Centered contact information tiles (location, phone, email) for better visual balance
 - June 25, 2025: Made Google Form responsive with CSS wrapper for proper mobile scaling
 - June 25, 2025: Updated promotional videos camera icon to new Cloudinary URL (v1750878471)
 - June 25, 2025: Centered Google Form horizontally on the contact page
