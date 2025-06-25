@@ -78,15 +78,8 @@ export default function ContactSection() {
             </Card>
           </div>
           
-          {/* Detailed Project Form Section */}
+          {/* Project Form Section */}
           <div className="mt-20 max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-charcoal mb-4">Detailed Project Form</h3>
-              <p className="text-lg text-gray-600">
-                Ready for a comprehensive quote? Fill out our detailed project form below
-              </p>
-            </div>
-            
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
