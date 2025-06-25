@@ -64,7 +64,7 @@ export default function ServicesSection() {
                     />
                   ) : service.icon === "camera" ? (
                     <img 
-                      src="https://res.cloudinary.com/daouvggvv/image/upload/v1750846479/ChatGPT_Image_Jun_25_2025_at_10_11_13_PM_oejmri.png" 
+                      src="https://res.cloudinary.com/daouvggvv/image/upload/v1750878471/Untitled_design-removebg-preview_lmvabu.png" 
                       alt="Camera" 
                       className="w-12 h-12"
                       style={{ filter: 'brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(1500%) hue-rotate(135deg) brightness(80%) contrast(90%)' }}
