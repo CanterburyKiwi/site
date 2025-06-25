@@ -15,7 +15,7 @@ export default function ContactSection() {
         
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="flex items-start space-x-4">
+            <div className="flex flex-col items-center text-center space-y-4">
               <div className="bg-forest text-white p-3 rounded-lg">
                 <MapPin size={20} />
               </div>
@@ -26,7 +26,7 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <div className="flex items-start space-x-4">
+            <div className="flex flex-col items-center text-center space-y-4">
               <div className="bg-forest text-white p-3 rounded-lg">
                 <Phone size={20} />
               </div>
@@ -37,7 +37,7 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <div className="flex items-start space-x-4">
+            <div className="flex flex-col items-center text-center space-y-4">
               <div className="bg-forest text-white p-3 rounded-lg">
                 <Mail size={20} />
               </div>
