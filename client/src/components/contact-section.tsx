@@ -13,8 +13,8 @@ export default function ContactSection() {
           </p>
         </div>
         
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex items-start space-x-4">
               <div className="bg-forest text-white p-3 rounded-lg">
                 <MapPin size={20} />
@@ -48,7 +48,7 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <Card className="bg-warm-gray">
+            <Card className="bg-warm-gray mx-auto max-w-md">
               <CardContent className="p-6 text-center">
                 <h3 className="font-bold text-charcoal mb-4">Follow My Work</h3>
                 <div className="flex justify-center space-x-6">
@@ -78,23 +78,30 @@ export default function ContactSection() {
             </Card>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="p-6 bg-forest text-white">
-              <h3 className="text-xl font-bold">Detailed Project Form</h3>
-              <p className="text-sm opacity-90 mt-2">Fill out this form for a comprehensive project quote</p>
+          {/* Detailed Project Form Section */}
+          <div className="mt-20 max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-charcoal mb-4">Detailed Project Form</h3>
+              <p className="text-lg text-gray-600">
+                Ready for a comprehensive quote? Fill out our detailed project form below
+              </p>
             </div>
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
-              width="640" 
-              height="1111" 
-              frameBorder="0" 
-              marginHeight="0" 
-              marginWidth="0"
-              loading="lazy"
-              title="Canterbury Kiwi Project Inquiry Form"
-            >
-              Loading…
-            </iframe>
+            
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
+                width={640} 
+                height={1111} 
+                frameBorder="0" 
+                marginHeight="0" 
+                marginWidth="0"
+                loading="lazy"
+                title="Canterbury Kiwi Project Inquiry Form"
+                className="mx-auto block"
+              >
+                Loading…
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
