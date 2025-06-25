@@ -1,50 +1,41 @@
 import { Button } from "@/components/ui/button";
 import { Play, ArrowRight } from "lucide-react";
-import balingImage1 from "@assets/2x case tractors baling-1_1750671941413.jpg";
-import balingImage2 from "@assets/2x case tractors baling_1750671941414.jpg";
-import harvestImage from "@assets/3x lexions_1750671941414.jpg";
-import quadtracImage from "@assets/Case ih quadtrac_1750671941414.jpg";
-import plantingImage from "@assets/Fendt planting maize_1750671941414.jpg";
-import carrotHarvestImage from "@assets/carrot harvest_1750673841911.jpg";
-import grassSeedImage from "@assets/x9 grass seed_1750673841913.jpg";
-import nhCombinesImage from "@assets/NH combines_1750674060749.jpg";
-import johnDeereMaizeImage from "@assets/John Deere chopping maize_1750701840307.jpg";
 
 const portfolioItems = [
   {
     title: "John Deere 9600i Chopping Maize",
     description: "Watch the John Deere 9600i in action as it chops maize for silage production.",
-    image: johnDeereMaizeImage,
+    image: "https://res.cloudinary.com/daouvggvv/image/upload/v1750828396/John_Deere_chopping_maize_1750701840307_ij3gx9.jpg",
     videoUrl: "https://youtu.be/aqBUuc44DoE"
   },
   {
     title: "Case IH Tractors Baling Barley",
     description: "Experience Case IH tractors as they bale barley straw after the harvest",
-    image: balingImage2,
+    image: "https://res.cloudinary.com/daouvggvv/image/upload/v1750828741/2x_case_tractors_baling-2_zi9tdm.jpg",
     videoUrl: "https://youtu.be/4awJ2wzTuMM"
   },
   {
     title: "Claas Lexion Combines Harvesting Carrot Seed",
     description: "Follow the specialized process of harvesting carrot seed with Claas Lexion combines in Canterbury fields.",
-    image: harvestImage,
+    image: "https://res.cloudinary.com/daouvggvv/image/upload/v1750828394/3x_lexions_1750671941414_nmwdod.jpg",
     videoUrl: "https://youtu.be/jl4OvJfOJUY"
   },
   {
     title: "Harvesting Carrots w/ Dewulf RA 3060",
     description: "See the impressive Dewulf RA 3060 harvester in action as it efficiently processes the carrot harvest.",
-    image: carrotHarvestImage,
+    image: "https://res.cloudinary.com/daouvggvv/image/upload/v1750828395/carrot_harvest_1750673841911_mushmz.jpg",
     videoUrl: "https://youtu.be/Zbl-Gn9_bNU"
   },
   {
     title: "John Deere X9 Harvesting Grass Seed",
     description: "Experience the John Deere X9 combine as it harvests grass seed with efficiency.",
-    image: grassSeedImage,
+    image: "https://res.cloudinary.com/daouvggvv/image/upload/v1750828740/x9_grass_seed-2_c5vcq5.jpg",
     videoUrl: "https://youtu.be/AMmkeUvRtnk"
   },
   {
     title: "New Holland Combines Harvesting Wheat",
     description: "Watch New Holland combines work in perfect coordination as they harvest wheat across expansive Canterbury fields.",
-    image: nhCombinesImage,
+    image: "https://res.cloudinary.com/daouvggvv/image/upload/v1750828395/NH_combines_1750674060749_t9qugf.jpg",
     videoUrl: "https://youtu.be/JojIj7LVyiI"
   }
 ];

@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Video, Check, Play } from "lucide-react";
 import { TbDrone } from "react-icons/tb";
-import tractorIcon from "@assets/ChatGPT Image Jun 24, 2025, 03_29_46 PM_1750735810953.png";
 
 const services = [
   {
@@ -57,12 +56,17 @@ export default function ServicesSection() {
               <CardContent className="p-8 flex flex-col h-full">
                 <div className="text-forest text-4xl mb-6">
                   {service.icon === "tractor" ? (
-                    <img 
-                      src={tractorIcon} 
-                      alt="Tractor" 
-                      className="w-12 h-12"
-                      style={{ filter: 'brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(1500%) hue-rotate(135deg) brightness(80%) contrast(90%)' }}
-                    />
+                    <div className="w-12 h-12 bg-forest rounded-lg flex items-center justify-center">
+                      <svg 
+                        viewBox="0 0 24 24" 
+                        className="w-8 h-8 text-white"
+                        fill="currentColor"
+                      >
+                        <path d="M4 18l-.5-1.5L5 15h14l1.5 1.5L20 18H4zm16-8V8c0-1.1-.9-2-2-2h-3l-2-2H9L7 6H4c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v2H4c-1.1 0-2 .9-2 2s.9 2 2 2h16c1.1 0 2-.9 2-2s-.9-2-2-2h-1v-2h1c1.1 0 2-.9 2-2z"/>
+                        <circle cx="7" cy="17" r="1.5"/>
+                        <circle cx="17" cy="17" r="1.5"/>
+                      </svg>
+                    </div>
                   ) : (
                     <service.icon size={48} />
                   )}

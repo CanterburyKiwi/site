@@ -1,5 +1,4 @@
 import { Camera } from "lucide-react";
-import plantingImage from "@assets/Fendt planting maize_1750671941414.jpg";
 
 export default function AboutSection() {
   return (
@@ -38,7 +37,7 @@ export default function AboutSection() {
           
           <div className="relative">
             <img 
-              src={plantingImage}
+              src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828394/Fendt_planting_maize_1750671941414_ogk1qj.jpg"
               alt="Canterbury Kiwi filmmaker at work"
               className="rounded-2xl shadow-xl w-full"
             />

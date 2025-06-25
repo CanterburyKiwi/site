@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Video, Youtube, Camera } from "lucide-react";
 import { TbDrone } from "react-icons/tb";
-import harvestImage from "@assets/x9_1750671076474.jpg";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -16,7 +15,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(27, 77, 62, 0.3), rgba(27, 77, 62, 0.3)), url(${harvestImage})`
+          backgroundImage: `linear-gradient(rgba(27, 77, 62, 0.3), rgba(27, 77, 62, 0.3)), url(https://res.cloudinary.com/daouvggvv/image/upload/v1750828394/x9_1750671076474_vk1iri.jpg)`
         }}
       />
       
