@@ -105,7 +105,7 @@ Canterbury Kiwi is a professional agricultural filmmaking service website that s
 
 ```
 Changelog:
-- June 25, 2025: Added Google Form section for detailed project inquiries at bottom of website
+- June 25, 2025: Integrated Google Form into contact section layout with 3-column design (contact info, quick contact form, detailed project form)
 - June 25, 2025: Updated Professional Services section with complete custom icon set (promotional videos camera, seasonal videos tractor, aerial photography drone)
 - June 25, 2025: Updated all service icons with custom Cloudinary images for complete brand consistency
 - June 25, 2025: Converted React app to static HTML for GitHub Pages deployment
