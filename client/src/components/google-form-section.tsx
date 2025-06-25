@@ -12,9 +12,9 @@ export default function GoogleFormSection() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfmuW8zcV6s4QG1FwSA/viewform?embedded=true" 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe39LenFfAc4AvELFrvFbQ7vpCnxLDbEIcCuZpq2HmrxoaqzA/viewform?embedded=true" 
               width="100%" 
-              height="800" 
+              height="1246" 
               frameBorder="0" 
               marginHeight="0" 
               marginWidth="0"
