@@ -95,9 +95,6 @@ export default function ContactSection() {
                 frameBorder="0" 
                 marginHeight="0" 
                 marginWidth="0"
-                loading="lazy"
-                title="Canterbury Kiwi Project Inquiry Form"
-                className="mx-auto block"
               >
                 Loading…
               </iframe>
