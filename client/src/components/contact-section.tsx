@@ -13,8 +13,8 @@ export default function ContactSection() {
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="flex items-start space-x-4">
               <div className="bg-forest text-white p-3 rounded-lg">
                 <MapPin size={20} />
@@ -48,7 +48,7 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <Card className="bg-warm-gray mx-auto max-w-md">
+            <Card className="bg-warm-gray">
               <CardContent className="p-6 text-center">
                 <h3 className="font-bold text-charcoal mb-4">Follow My Work</h3>
                 <div className="flex justify-center space-x-6">
@@ -93,8 +93,8 @@ export default function ContactSection() {
                 width={640} 
                 height={1111} 
                 frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0"
+                marginHeight={0} 
+                marginWidth={0}
               >
                 Loading…
               </iframe>
