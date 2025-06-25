@@ -35,8 +35,13 @@ A professional agricultural filmmaking service website showcasing video producti
 
 ## Image Assets
 
-Due to GitHub file size limitations, large image assets are not included in this repository. 
-The original high-quality images should be hosted on a CDN or image hosting service.
+All images are hosted on Cloudinary for optimal performance and delivery:
+- High-quality agricultural machinery photos
+- Optimized for web delivery with automatic format conversion
+- Fast loading via global CDN
+- Responsive image sizing
+
+Original images were too large for GitHub (some 16MB+), so Cloudinary hosting ensures better performance.
 
 ## Contact
 

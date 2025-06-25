@@ -105,7 +105,9 @@ Canterbury Kiwi is a professional agricultural filmmaking service website that s
 
 ```
 Changelog:
-- June 23, 2025. Initial setup
+- June 25, 2025: Migrated all images to Cloudinary hosting for GitHub compatibility
+- June 24, 2025: Added custom tractor icon for seasonal videos service
+- June 23, 2025: Initial setup with local image assets
 ```
 
 ## User Preferences
