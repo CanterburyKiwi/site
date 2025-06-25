@@ -4,27 +4,34 @@ A professional agricultural filmmaking service website showcasing video producti
 
 ## Features
 
-- Modern React frontend with TypeScript
-- Express.js backend with PostgreSQL database
+- **Static HTML Website** - No build process required
 - Responsive design with Tailwind CSS
-- Contact form with email integration
+- Contact form with JavaScript validation
 - Portfolio showcase with video links
 - Professional agricultural-themed design
+- Optimized images hosted on Cloudinary
 
 ## Tech Stack
 
-- **Frontend**: React 18, TypeScript, Tailwind CSS, Vite
-- **Backend**: Node.js, Express.js, TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
-- **UI Components**: shadcn/ui
-- **Icons**: Lucide React, React Icons
+- **Frontend**: Static HTML, CSS, JavaScript
+- **Styling**: Tailwind CSS (CDN)
+- **Icons**: Font Awesome
+- **Images**: Cloudinary CDN
+- **Deployment**: GitHub Pages ready
 
-## Getting Started
+## Quick Start
 
 1. Clone this repository
-2. Install dependencies: `npm install`
-3. Set up environment variables (DATABASE_URL, SENDGRID_API_KEY)
-4. Run development server: `npm run dev`
+2. Open `index.html` in your browser
+3. **No build process needed!**
+
+## GitHub Pages Deployment
+
+1. Upload files to GitHub repository
+2. Go to Settings → Pages
+3. Select "Deploy from a branch"
+4. Choose "main" branch and "/ (root)"
+5. Your site will be live at: `https://yourusername.github.io/repository-name`
 
 ## Project Structure
 

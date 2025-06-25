@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canterbury Kiwi - Professional Agricultural Filmmaking Services</title>
+    <meta name="description" content="Professional agricultural filmmaking services showcasing New Zealand's farming industry. Promotional videos, seasonal documentation, and aerial photography.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --forest: #1b4d3e;
+            --harvest: #f4a261;
+            --charcoal: #2d3436;
+            --warm-gray: #f8f9fa;
+        }
+        .bg-forest { background-color: var(--forest); }
+        .text-forest { color: var(--forest); }
+        .bg-harvest { background-color: var(--harvest); }
+        .text-harvest { color: var(--harvest); }
+        .bg-charcoal { background-color: var(--charcoal); }
+        .text-charcoal { color: var(--charcoal); }
+        .bg-warm-gray { background-color: var(--warm-gray); }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(27, 77, 62, 0.3), rgba(27, 77, 62, 0.3)), 
+                            url('https://res.cloudinary.com/daouvggvv/image/upload/v1750828394/x9_1750671076474_vk1iri.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .portfolio-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .portfolio-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .tractor-icon {
+            filter: brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(1500%) hue-rotate(135deg) brightness(80%) contrast(90%);
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-forest">Canterbury Kiwi</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-charcoal hover:text-forest transition-colors">Home</a>
+                    <a href="#services" class="text-charcoal hover:text-forest transition-colors">Services</a>
+                    <a href="#portfolio" class="text-charcoal hover:text-forest transition-colors">Portfolio</a>
+                    <a href="#about" class="text-charcoal hover:text-forest transition-colors">About</a>
+                    <a href="#contact" class="text-charcoal hover:text-forest transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-charcoal">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 text-charcoal hover:text-forest">Home</a>
+                <a href="#services" class="block py-2 text-charcoal hover:text-forest">Services</a>
+                <a href="#portfolio" class="block py-2 text-charcoal hover:text-forest">Portfolio</a>
+                <a href="#about" class="block py-2 text-charcoal hover:text-forest">About</a>
+                <a href="#contact" class="block py-2 text-charcoal hover:text-forest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 text-white">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                            Canterbury<br />
+                            <span class="text-harvest">Kiwi</span>
+                        </h1>
+                        <p class="text-xl text-gray-200 max-w-lg">
+                            Professional agricultural filmmaking services showcasing the heart of New Zealand's farming industry
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-harvest text-charcoal px-8 py-4 rounded-lg hover:bg-opacity-90 font-semibold text-lg transition-all">
+                            Get In Touch
+                        </a>
+                        <a href="https://www.youtube.com/@CanterburyKiwi" target="_blank" class="bg-white bg-opacity-20 backdrop-blur-sm text-white border border-white border-opacity-30 px-8 py-4 rounded-lg hover:bg-opacity-30 font-semibold text-lg transition-all">
+                            <i class="fab fa-youtube text-red-500 mr-2"></i>
+                            Check Out My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 space-y-6">
+                        <h3 class="text-2xl font-bold">Professional Services</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-video text-harvest"></i>
+                                <span>Promotional Videos</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-camera text-harvest"></i>
+                                <span>Property Showcases</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-helicopter text-harvest"></i>
+                                <span>Aerial Photography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-warm-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-4xl font-bold text-charcoal">My Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Professional filmmaking services tailored for the agricultural industry
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-lg p-8">
+                    <div class="text-forest text-4xl mb-6">
+                        <i class="fas fa-video text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Promotional Videos</h3>
+                    <p class="text-gray-600 mb-6">
+                        Compelling promotional content that showcases your machinery, farm and more to attract valuable customers
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Product showcases
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Sponsored videos
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Online Advertising
+                        </li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=Nly9rFrOoqk" target="_blank" class="w-full bg-forest hover:bg-opacity-90 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center transition-all">
+                        <i class="fas fa-play mr-2"></i>
+                        Preview Example
+                    </a>
+                </div>
+
+                <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-lg p-8">
+                    <div class="text-forest text-4xl mb-6">
+                        <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828393/ChatGPT_Image_Jun_24_2025_03_29_46_PM_1750735810953_upt28v.png" 
+                             alt="Tractor" 
+                             class="w-12 h-12 tractor-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Seasonal Videos</h3>
+                    <p class="text-gray-600 mb-6">
+                        Footage from a year-round farming cycle, seamlessly edited to display all the different work that is carried out on your farm
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Year-round on-farm filming
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Variety of footage
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Staff videos
+                        </li>
+                    </ul>
+                    <a href="https://youtu.be/N5HwOD6uwzc?si=k2D0hA_53To2Ya8S" target="_blank" class="w-full bg-forest hover:bg-opacity-90 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center transition-all">
+                        <i class="fas fa-play mr-2"></i>
+                        Preview Example
+                    </a>
+                </div>
+
+                <div class="bg-white shadow-lg hover:shadow-xl transition-all rounded-lg p-8">
+                    <div class="text-forest text-4xl mb-6">
+                        <i class="fas fa-helicopter text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4">Aerial Photography</h3>
+                    <p class="text-gray-600 mb-6">
+                        Stunning aerial footage and photography that captures the scale and progression of agricultural operations.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Drone cinematography
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Landscape photography
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-forest mr-2"></i>
+                            Overtime progression and development
+                        </li>
+                    </ul>
+                    <a href="https://youtu.be/Yguqb5Iy3jw?si=YzVoJ6G6YFGRMSVO" target="_blank" class="w-full bg-forest hover:bg-opacity-90 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center transition-all">
+                        <i class="fas fa-play mr-2"></i>
+                        Preview Example
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-4xl font-bold text-charcoal">Previous Projects</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    A showcase of my agricultural filmmaking projects across Canterbury and beyond
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-card relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="window.open('https://youtu.be/aqBUuc44DoE', '_blank')">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828396/John_Deere_chopping_maize_1750701840307_ij3gx9.jpg" 
+                         alt="John Deere 9600i Chopping Maize" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">John Deere 9600i Chopping Maize</h3>
+                            <p class="text-sm">Watch the John Deere 9600i in action as it chops maize for silage production.</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 hover:opacity-100 transition-opacity">
+                        <button class="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="window.open('https://youtu.be/4awJ2wzTuMM', '_blank')">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828741/2x_case_tractors_baling-2_zi9tdm.jpg" 
+                         alt="Case IH Tractors Baling Barley" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Case IH Tractors Baling Barley</h3>
+                            <p class="text-sm">Experience Case IH tractors as they bale barley straw after the harvest</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 hover:opacity-100 transition-opacity">
+                        <button class="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="window.open('https://youtu.be/jl4OvJfOJUY', '_blank')">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828394/3x_lexions_1750671941414_nmwdod.jpg" 
+                         alt="Claas Lexion Combines Harvesting Carrot Seed" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Claas Lexion Combines Harvesting Carrot Seed</h3>
+                            <p class="text-sm">Follow the specialized process of harvesting carrot seed with Claas Lexion combines in Canterbury fields.</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 hover:opacity-100 transition-opacity">
+                        <button class="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="window.open('https://youtu.be/Zbl-Gn9_bNU', '_blank')">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828395/carrot_harvest_1750673841911_mushmz.jpg" 
+                         alt="Harvesting Carrots w/ Dewulf RA 3060" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Harvesting Carrots w/ Dewulf RA 3060</h3>
+                            <p class="text-sm">See the impressive Dewulf RA 3060 harvester in action as it efficiently processes the carrot harvest.</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 hover:opacity-100 transition-opacity">
+                        <button class="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="window.open('https://youtu.be/AMmkeUvRtnk', '_blank')">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828740/x9_grass_seed-2_c5vcq5.jpg" 
+                         alt="John Deere X9 Harvesting Grass Seed" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">John Deere X9 Harvesting Grass Seed</h3>
+                            <p class="text-sm">Experience the John Deere X9 combine as it harvests grass seed with efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 hover:opacity-100 transition-opacity">
+                        <button class="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="window.open('https://youtu.be/JojIj7LVyiI', '_blank')">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828395/NH_combines_1750674060749_t9qugf.jpg" 
+                         alt="New Holland Combines Harvesting Wheat" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">New Holland Combines Harvesting Wheat</h3>
+                            <p class="text-sm">Watch New Holland combines work in perfect coordination as they harvest wheat across expansive Canterbury fields.</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 hover:opacity-100 transition-opacity">
+                        <button class="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.youtube.com/@CanterburyKiwi" target="_blank" class="bg-forest text-white px-8 py-4 rounded-lg hover:bg-opacity-90 font-semibold inline-flex items-center space-x-2 transition-all">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-warm-gray">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-bold text-charcoal">My Work</h2>
+                    <div class="space-y-4 text-gray-600">
+                        <p class="text-lg">
+                            Based in the heart of New Zealand's agricultural region, Canterbury Kiwi specializes in professional filmmaking services for farms and agricultural businesses.
+                        </p>
+                        <p>
+                            With 30+ paid projects, over 5 year's experience, and over 1.5 million YouTube views, I understand the best way to get your product advertised on the market. I have both technical expertise as well as rural knowledge from working on farms. This combination allows us to achieve the best shots and editing outcomes to make your promotional material successful.
+                        </p>
+                        <p>
+                            From promotional videos for machinery dealerships to aerial footage that captures the scale of your farming operation, I'm committed to delivering content that drives results for your business.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 pt-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-forest">5+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-forest">30+</div>
+                            <div class="text-sm text-gray-600">Paid Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-forest">1.5M+</div>
+                            <div class="text-sm text-gray-600">YouTube Views</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://res.cloudinary.com/daouvggvv/image/upload/v1750828394/Fendt_planting_maize_1750671941414_ogk1qj.jpg"
+                         alt="Canterbury Kiwi filmmaker at work"
+                         class="rounded-2xl shadow-xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
+                                <i class="fas fa-camera text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-charcoal">Professional</div>
+                                <div class="text-sm text-gray-600">Equipment & Expertise</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl font-bold text-charcoal mb-4">Get In Touch</h2>
+                        <p class="text-lg text-gray-600">
+                            Ready to showcase your agricultural operation with professional filmmaking? Let's discuss your project.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-charcoal">Email</div>
+                                <div class="text-gray-600">contact@canterburykiwi.com</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-charcoal">Phone</div>
+                                <div class="text-gray-600">+64 21 123 4567</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-charcoal">Location</div>
+                                <div class="text-gray-600">Canterbury, New Zealand</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <h3 class="text-xl font-bold text-charcoal mb-4">Follow My Work</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.youtube.com/@CanterburyKiwi" target="_blank" class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-warm-gray p-8 rounded-2xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-charcoal mb-2">Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-forest focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-charcoal mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-forest focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-charcoal mb-2">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-forest focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-charcoal mb-2">Service Required *</label>
+                            <select id="service" name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-forest focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="promotional">Promotional Videos</option>
+                                <option value="seasonal">Seasonal Videos</option>
+                                <option value="aerial">Aerial Photography</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-charcoal mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-forest focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-forest text-white py-4 px-6 rounded-lg hover:bg-opacity-90 font-semibold transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">Canterbury Kiwi</div>
+                    <p class="text-gray-400 mb-4">
+                        Professional agricultural filmmaking services showcasing New Zealand's farming industry.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@CanterburyKiwi" target="_blank" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Promotional Videos</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Seasonal Videos</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Aerial Photography</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="https://www.youtube.com/@CanterburyKiwi" target="_blank" class="hover:text-white transition-colors">YouTube Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Canterbury Kiwi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.name || !data.email || !data.service || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Show success message (in a real application, you'd send this to a server)
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Scroll animation for portfolio cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe portfolio cards
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
