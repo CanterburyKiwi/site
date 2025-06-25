@@ -68,7 +68,12 @@ export default function HeroSection() {
                   <span>Seasonal Videos</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <TbDrone className="text-harvest" size={20} />
+                  <img 
+                    src="https://res.cloudinary.com/daouvggvv/image/upload/v1750845326/ChatGPT_Image_Jun_25_2025_09_54_42_PM_uhvbmv.png" 
+                    alt="Drone" 
+                    className="w-5 h-5"
+                    style={{ filter: 'brightness(0) saturate(100%) invert(58%) sepia(79%) saturate(2476%) hue-rotate(21deg) brightness(103%) contrast(101%)' }}
+                  />
                   <span>Aerial Photography</span>
                 </div>
               </div>
