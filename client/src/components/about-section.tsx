@@ -57,7 +57,7 @@ export default function AboutSection() {
                 </svg>
               </a>
               <a 
-                href="https://www.instagram.com/canterbury_kiwi/" 
+                href="https://www.instagram.com/canterburykiwiyt" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-colors"
