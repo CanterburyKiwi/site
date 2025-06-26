@@ -105,6 +105,7 @@ Canterbury Kiwi is a professional agricultural filmmaking service website that s
 
 ```
 Changelog:
+- June 26, 2025: Added social media icons below "My Work" section statistics
 - June 26, 2025: Removed social media dropdown menu from navigation for cleaner design
 - June 25, 2025: Optimized Google Form height to reduce excess blank space (120% padding-bottom)
 - June 25, 2025: Centered contact information tiles (location, phone, email) for better visual balance
