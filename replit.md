@@ -105,6 +105,7 @@ Canterbury Kiwi is a professional agricultural filmmaking service website that s
 
 ```
 Changelog:
+- June 26, 2025: Added Open Graph meta tags for social media link previews with Canterbury Kiwi logo
 - June 26, 2025: Added social media icons to footer below company description
 - June 26, 2025: Updated Instagram link to new handle (canterburykiwiyt)
 - June 26, 2025: Updated Facebook link to new URL (https://www.facebook.com/CanterburyKiwiYT)
