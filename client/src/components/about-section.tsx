@@ -47,7 +47,7 @@ export default function AboutSection() {
                 </svg>
               </a>
               <a 
-                href="https://www.facebook.com/profile.php?id=61570505278895" 
+                href="https://www.facebook.com/CanterburyKiwiYT" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors"
