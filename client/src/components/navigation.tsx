@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Youtube, Facebook, Instagram } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Menu, X } from "lucide-react";
 import logoImage from "@assets/channels4_profile_1750717979071.jpg";
 
 export default function Navigation() {
@@ -63,28 +57,6 @@ export default function Navigation() {
             >
               About
             </button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-charcoal hover:text-forest">
-                  Social Media
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => window.open('https://www.youtube.com/@CanterburyKiwi', '_blank')}>
-                  <Youtube className="mr-2 h-4 w-4 text-red-600" />
-                  YouTube
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => window.open('https://www.facebook.com/profile.php?id=61570505278895', '_blank')}>
-                  <Facebook className="mr-2 h-4 w-4 text-blue-600" />
-                  Facebook
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => window.open('https://www.instagram.com/canterbury_kiwi/', '_blank')}>
-                  <Instagram className="mr-2 h-4 w-4 text-pink-600" />
-                  Instagram
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
             
             <Button 
               onClick={() => scrollToSection('contact')}
@@ -132,32 +104,6 @@ export default function Navigation() {
               >
                 About
               </button>
-              <div className="border-t border-gray-200 mt-4 pt-4">
-                <div className="text-sm font-medium text-charcoal mb-2">Social Media</div>
-                <div className="space-y-1">
-                  <button
-                    onClick={() => window.open('https://www.youtube.com/@CanterburyKiwi', '_blank')}
-                    className="flex items-center w-full px-2 py-1 text-charcoal hover:text-forest transition-colors"
-                  >
-                    <Youtube className="mr-2 h-4 w-4 text-red-600" />
-                    YouTube
-                  </button>
-                  <button
-                    onClick={() => window.open('https://www.facebook.com/profile.php?id=61570505278895', '_blank')}
-                    className="flex items-center w-full px-2 py-1 text-charcoal hover:text-forest transition-colors"
-                  >
-                    <Facebook className="mr-2 h-4 w-4 text-blue-600" />
-                    Facebook
-                  </button>
-                  <button
-                    onClick={() => window.open('https://www.instagram.com/canterbury_kiwi/', '_blank')}
-                    className="flex items-center w-full px-2 py-1 text-charcoal hover:text-forest transition-colors"
-                  >
-                    <Instagram className="mr-2 h-4 w-4 text-pink-600" />
-                    Instagram
-                  </button>
-                </div>
-              </div>
               
               <Button 
                 onClick={() => scrollToSection('contact')}
