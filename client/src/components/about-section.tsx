@@ -78,7 +78,12 @@ export default function AboutSection() {
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-forest rounded-full flex items-center justify-center">
-                  <Camera className="text-white" size={20} />
+                  <img 
+                    src="https://res.cloudinary.com/daouvggvv/image/upload/v1750878471/Untitled_design-removebg-preview_lmvabu.png" 
+                    alt="Camera" 
+                    className="w-5 h-5"
+                    style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }}
+                  />
                 </div>
                 <div>
                   <div className="font-bold text-charcoal">Professional</div>
